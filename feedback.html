@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>FEEDBACK FORM</title>
+</head>
+<style type="text/css">
+textarea,input,label:hover{
+  font-size:21;
+  color: rgb(66, 204, 32);
+}
+
+input,select
+{
+height:40px;
+padding:10px;
+width:10cm;
+}
+label
+{
+font-weight:bold;
+font-size:15pt;
+margin-right:100px;
+color:darkorange;
+}
+div{
+margin-bottom:150px;
+height:4px;
+font-size:15px;
+}
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #d61818;
+  color: white;
+  font-size: 25;
+}
+</style>
+<body style="margin:0;padding:0;" bgcolor="dimgrey">
+<header align="center" style="background-color:rgb(189, 100, 88);height:40px;padding:1cm;margin-bottom:100px;font-size:40px;">FEEDBACK FORM</header>
+
+<div align="center">
+<form action="fb.php" method="get">
+<table>
+<tr><td><label>NAME:</label></td><td><input type="text" name="name" id="NAME" placeholder="Enter your name"/></td></tr>
+<tr><td><p><label>E-MAIL:</td><td></label><input type="email" name="email" id="EMAIL" placeholder="Enter your E-mail"/></p></td></tr>
+<tr><td><p><label>NUMBER OF STARS:</label><td><select name="stars" id=STARS>
+<option value="" >SELECT</option>
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option></select>
+</label></p></td></tr>
+<tr><td><p><label>COMMENTS:</label></td><td><textarea name="comments" id="COMMENTS" style="font-size:15px" rows="10" cols="44" placeholder="Enter your comments here"></textarea></p></td></tr>
+</div>
+</table><br>
+<input class="btn" type="submit" value="SUBMIT" onclick="alert('Your form has been submitted')"/>
+</form>
+</body>
+</html>
